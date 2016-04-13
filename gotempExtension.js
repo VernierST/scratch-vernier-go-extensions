@@ -104,8 +104,7 @@
     if (inputData[0] === CMD_MEASUREMENT_RESPONSE) {
       var measurement = (inputData[3] << 8) | (inputData[2] & 0xFF);
       var volts = ((2.5 / 32768) * measurement) + 2.5;
-      var reading = (slope * volts) + intercept;
-      currentTemp = parseFloat(Math.round(reading * 100) / 100).toFixed(2);
+      currentTemp = (slope * volts) + intercept;
     }
   }
 
@@ -129,10 +128,10 @@
   }
 
   ext.getTemp = function(scale) {
-    if (scale === '\u00B0C')
-      return currentTemp;
-    else
-      return (currentTemp * 1.8) + 32;
+    var temp = currentTemp;
+    if (scale === '\u00B0F')
+      temp = (temp * 1.8) + 32;
+    return parseFloat(Math.round(temp * 100) / 100).toFixed(2);
   };
 
   var poller = null;
