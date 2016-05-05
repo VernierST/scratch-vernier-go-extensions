@@ -1,2 +1,2 @@
-# ScratchX-GoTemp
-ScratchX extension for communicating with Vernier Go! Temp sensors
+# scratch-vernier-go-extensions
+ScratchX extensions for communicating with Vernier Go! Temp and Go! Motion devices.
