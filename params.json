@@ -1,6 +1,6 @@
 {
   "name": "scratch-vernier-go-extensions",
   "tagline": "ScratchX extension for communicating with Vernier Go! devices",
-  "body": "### Introduction\r\nUse data from Vernier [Go! Temp] (http://www.vernier.com/products/sensors/temperature-sensors/go-temp/) and [Go! Motion] (http://www.vernier.com/products/sensors/motion-detectors/go-mot/) sensors in your Scratch projects.\r\n\r\n### Authors and Contributors\r\nThis page and the Go! Device extensions are maintained by Vernier Software & Technology (@VernierSoftwareTechnology) Thanks to Kreg Hanning (@khanning) and the [Scratch Foundation] (http://www.scratchfoundation.org/) for their support, encouragement and for creating a fun and dynamic tool for teaching and learning.\r\n",
+  "body": "### Introduction\r\nUse data from Vernier [Go! Temp] (http://www.vernier.com/products/sensors/temperature-sensors/go-temp/) and [Go! Motion] (http://www.vernier.com/products/sensors/motion-detectors/go-mot/) sensors in your Scratch projects.\r\n\r\n### Authors and Contributors\r\nThis page and the Go! Device extensions are maintained by Vernier Software & Technology (@VernierSoftwareTechnology). Special thanks to Kreg Hanning (@khanning) and the [Scratch Foundation] (http://www.scratchfoundation.org/) for their support, encouragement and for creating a fun and dynamic tool for teaching and learning.\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
