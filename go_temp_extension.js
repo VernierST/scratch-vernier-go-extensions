@@ -102,8 +102,18 @@
 
   function processInput(inputData) {
     if (inputData[0] === CMD_MEASUREMENT_RESPONSE) {
+      // Convert to a 16-bit unsigned int
       var measurement = (inputData[3] << 8) | (inputData[2] & 0xFF);
+
+      // Convert to a 16-bit signed int (bit 15 indicates sign)
+      if ((measurement & 0x8000) > 0) {
+        measurement = measurement - 0x10000;
+      }
+
+      // Convert to volts
       var volts = ((2.5 / 32768) * measurement) + 2.5;
+
+      // Convert to degrees Celcius
       currentTemp = (slope * volts) + intercept;
     }
   }
