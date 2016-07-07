@@ -40,7 +40,7 @@
 <p>In order to connect Scratch to a Go! device, you will need to install a web browser plugin. Follow steps 1 and 2 on the
 <a href="https://scratch.mit.edu/info/ext_download/">Scratch Extensions Browser Plugin webpage</a> to download and install the plugin.</p>
 
-<p><em>Note: At the moment, you cannot use the Vernier Go! extension in a Chrome web browser on Mac OS X; this is a Chrome-only issue on Mac OS X. The plugin </em>will<em> work in Safari and other Mac web browsers.</p>
+<p><em>Note: At the moment, you cannot use a Vernier Go! extension in a Chrome web browser on Mac OS X; this is a Chrome-only issue on Mac OS X. The plugin </em>will<em> work in Safari and other Mac web browsers.</p>
 
 <p>The extension should work in any browser (with the plugin installed) on a Windows computer.</em></p>
 
@@ -80,6 +80,31 @@
 <li><a href="http://scratchx.org/?url=http://verniersoftwaretechnology.github.io/scratch-vernier-go-extensions/examples/DrawTemp.sbx">DrawTemp</a></li>
 <li><a href="http://scratchx.org/?url=http://verniersoftwaretechnology.github.io/scratch-vernier-go-extensions/examples/SayMotion.sbx">SayMotion</a></li>
 </ul>
+
+<h2>
+<a id="technical-details" class="anchor" href="#technical-details" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technical Details about the Go! Sensors</h2>
+
+<p>As you begin to use the Go!Temp and Go!Motion sensors in your Scratch projects, there are some technical details about the sensors that are helpful to keep in mind.</p>
+
+<p><strong>Go!Temp</strong><br>
+The Go!Temp will read temperatures between -20 and 115 °C, to an accuracy of +/- 0.5 °C. The sensing element in the Go!Temp is located at the very tip of the probe.
+It responds to a change in temperatures in about 4 s; the Go!Temp will not measure rapid temperature changes faster.<br>
+
+<p>For additional information about the Go!Temp, refer to its <a href="http://www.vernier.com/files/manuals/go-temp.pdf">user manual</a>.</p>
+
+<p><strong>Go!Motion</strong><br>
+The Go!Motion sensor measures the distance to a person or object between 0.15 and 6 m away, with an accuracy of 2 mm. To measure the distance,
+the Go!Motion makes a clicking sound, records the time until it hears the sound's echo, and then calculates the distance using a temperature-corrected speed of sound.<br>
+<br>
+The Go!Motion can "see" any object within a cone-shaped area about 15° to 20° off the axis of the center line of the gold foil transducer on the head of the Go!Motion.
+Note that Go! Motion will report the distance to the closest object that produces a sufficiently strong echo. Go! Motion can pick up objects such as chairs and tables in the cone of ultrasound.<br>
+<br>
+<img src="Go_motion_cone.png"><br>
+<br>
+The Go!Motion has a sensitivity switch located under the pivoting Go!Motion head. The Ball/Walk setting is best for tracking large objects, large distances,
+and objects that are poor reflectors. The Track setting is best for tracking smaller, closer objects.
+
+<p>For additional information about the Go!Motion, refer to its <a href="http://www.vernier.com/manuals/go-mot/">user manual</a>.</p>
 
 <hr>
 
