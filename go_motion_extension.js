@@ -20,7 +20,7 @@
 
   var intercept = 0;
   var slope = 0;
-  
+
   function initializeDevice(inputData) {
 
     if (!initReceived) {
@@ -121,10 +121,10 @@
     if (poller) poller = clearInterval(poller);
     if (device) {
       var out = [0, CMD_STOP_MEASUREMENTS, 0, 0, 0, 0, 0, 0];
-      device.write(new Uint8Array(out).buffer);     
+      device.write(new Uint8Array(out).buffer);
       out = [0, CMD_SET_LED_STATE, 0, 0x04, 0, 0, 0, 0];
       device.write(new Uint8Array(out).buffer);
-      
+
       device.close();
     }
     device = null;
@@ -137,7 +137,7 @@
 
   var descriptor = {
     blocks: [
-      ['r', 'position %m.scale', 'getPosition', 'm'],
+      ['r', 'distance %m.scale', 'getPosition', 'm'],
     ],
     menus: {
       scale: ['m', 'ft']
