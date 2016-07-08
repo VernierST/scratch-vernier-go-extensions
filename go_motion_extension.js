@@ -87,6 +87,19 @@
     return parseFloat(Math.round(position * 100) / 100).toFixed(2);
   };
 
+  ext.compareDist = function(op, limitDist, scale) {
+    var dist = ext.getPosition(scale);
+    if (op == '>') {
+      return dist > limitDist;
+    } else if (op == '<') {
+      return dist < limitDist;
+    } else if (op == '=') {
+      return dist == limitDist;
+    } else {
+      return false;
+    }
+  };
+
   var poller = null;
   ext._deviceConnected = function (dev) {
     if (device) return;
@@ -138,9 +151,11 @@
   var descriptor = {
     blocks: [
       ['r', 'distance %m.scale', 'getPosition', 'm'],
+      ['h', 'When distance %m.ops %n %m.scale', 'compareDist', '>','1.5','m']
     ],
     menus: {
-      scale: ['m', 'ft']
+      scale: ['m', 'ft'],
+      ops: ['>','<','=']
     },
     url: 'http://www.vernier.com/products/sensors/motion-detectors/go-mot'
   };
