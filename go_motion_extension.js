@@ -39,7 +39,7 @@
     if (!ledSet) {
       if (inputData[1] === CMD_SET_LED_STATE) {
         console.log("Go!Motion LED is on");
-        var out = [0, CMD_SET_MEASUREMENT_PERIOD, 0xF4, 0x01, 0, 0, 0, 0];
+        var out = [0, CMD_SET_MEASUREMENT_PERIOD, 0x64, 0x01, 0, 0, 0, 0];
         device.write(new Uint8Array(out).buffer);
         ledSet = true;
       } else {
@@ -66,7 +66,7 @@
         }, 10);
 
       } else {
-        var out = [0, CMD_SET_MEASUREMENT_PERIOD, 0xF4, 0x01, 0, 0, 0, 0];
+        var out = [0, CMD_SET_MEASUREMENT_PERIOD, 0x64, 0x01, 0, 0, 0, 0];
         device.write(new Uint8Array(out).buffer);
       }
       return;
