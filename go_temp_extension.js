@@ -24,7 +24,7 @@
 
   var intercept = 0;
   var slope = 0;
-  
+
   function initializeDevice(inputData) {
 
     if (!initReceived) {
@@ -144,6 +144,10 @@
     return parseFloat(Math.round(temp * 100) / 100).toFixed(2);
   };
 
+  ext.compareTemp = function(op, limitTemp, scale) {
+
+  };
+
   var poller = null;
   ext._deviceConnected = function (dev) {
     if (device) return;
@@ -194,9 +198,11 @@
   var descriptor = {
     blocks: [
       ['r', 'temperature %m.scale', 'getTemp', '\u00B0C'],
+      ['h', 'When temperature %m.ops %n %m.scale', 'compareTemp', '>', '20','\u00B0C']
     ],
     menus: {
-      scale: ['\u00B0C', '\u00B0F']
+      scale: ['\u00B0C', '\u00B0F'],
+      ops:  ['>','<','=']
     },
     url: 'http://www.vernier.com/products/sensors/temperature-sensors/go-temp/'
   };
