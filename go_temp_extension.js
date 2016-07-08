@@ -145,7 +145,16 @@
   };
 
   ext.compareTemp = function(op, limitTemp, scale) {
-
+    var temp = ext.getTemp(scale);
+    if (op == '>') {
+      return temp > limitTemp;
+    } else if (op == '<') {
+      return temp < limitTemp;
+    } else if (op == '=') {
+      return temp == limitTemp;
+    } else {
+      return false;
+    }
   };
 
   var poller = null;
