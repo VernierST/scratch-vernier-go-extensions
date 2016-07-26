@@ -128,6 +128,11 @@
     if (device != dev) return;
     if (poller) poller = clearInterval(poller);
     device = null;
+
+    //Reset init flags when device is removed
+    initReceived = false;
+    ledSet = false;
+    periodSet = false;
   };
 
   ext._shutdown = function () {
