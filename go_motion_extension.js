@@ -84,6 +84,8 @@
     var position = currentPosition;
     if (scale === 'ft')
       position = (position * 3.28084);
+    if (scale === 'cm')
+      position = (position * 100);
     return parseFloat(Math.round(position * 100) / 100).toFixed(2);
   };
 
@@ -159,7 +161,7 @@
       ['h', 'When distance %m.ops %n %m.scale', 'compareDist', '>','1.5','m']
     ],
     menus: {
-      scale: ['m', 'ft'],
+      scale: ['m', 'ft', 'cm'],
       ops: ['>','<','=']
     },
     url: 'http://www.vernier.com/products/sensors/motion-detectors/go-mot'
