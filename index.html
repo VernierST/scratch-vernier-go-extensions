@@ -22,11 +22,12 @@
       <h1>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h1>
 
-<p>Use data from Vernier <a href="http://www.vernier.com/products/sensors/temperature-sensors/go-temp/">Go!Temp</a> and <a href="http://www.vernier.com/products/sensors/motion-detectors/go-mot/">Go!Motion</a> sensors to bring real world data into your Scratch projects.</p>
+<p>Use Vernier sensors to bring real world data into your Scratch projects.</p>
 
 <ul>
-<li>Use the Go!Temp extension to obtain a real-time temperature reading from a connected Go!Temp probe.</li>
-<li>Use the Go!Motion extension to obtain a real-time position reading from a connected Go!Motion device.</li>
+<li>Use the Go!Temp extension to obtain a real-time temperature reading from a connected <a href="http://www.vernier.com/products/sensors/temperature-sensors/go-temp/">Go!Temp</a> probe.</li>
+<li>Use the Go!Motion extension to obtain a real-time position reading from a connected <a href="http://www.vernier.com/products/sensors/motion-detectors/go-mot/">Go!Motion</a> device.</li>
+<li>Use the Go!Link extension to obtain real-time data from a connected <a href="http://www.vernier.com/products/interfaces/go-link/">Go!Link</a> interface and compatible Vernier sensor.</li>
 </ul>
 
 <hr>
@@ -41,7 +42,7 @@
 
 <p><em>Note: At the moment, you cannot use the Vernier Go! extension in a Chrome web browser on Mac OS X. It </em>will<em> work in Safari and other web browsers.<br>
 
-<p>The extension should work in any browser (with the plugin installed) on a Windows computer.</em>
+<p>The extension should work in a Chrome or Edge browser (with the plugin installed) on a Windows computer; it is </em>not<em> currently compatible with Firefox.</em>
 
 <h2>
 <a id="load-the-extension" class="anchor" href="#load-the-extension" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Load the extension</h2>
@@ -54,10 +55,41 @@
 <p><strong>Go!Motion</strong><br>
 <a href="http://scratchx.org/?url=http://verniersoftwaretechnology.github.io/scratch-vernier-go-extensions/go_motion_extension.js">http://scratchx.org/?url=http://verniersoftwaretechnology.github.io/scratch-vernier-go-extensions/go_motion_extension.js</a></p>
 
+<p><strong>Go!Link</strong><br>
+<a href="http://scratchx.org/?url=http://verniersoftwaretechnology.github.io/scratch-vernier-go-extensions/go_link_extension.js">http://scratchx.org/?url=http://verniersoftwaretechnology.github.io/scratch-vernier-go-extensions/go_link_extension.js</a></p>
+
+
 <h2>
 <a id="connect-your-go-device" class="anchor" href="#connect-your-go-device" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Connect your Go! device</h2>
 
-<p>Connect the USB cable of your Go! device to your computer. </p>
+<p>Connect the USB cable of your Go! device to your computer. If you are using the Go!Link, connect one of the following compatible sensors:</p>
+<ul>
+  <li><a href="www.vernier.com/acc-bta">25-g Accelerometer</a></li>
+  <li><a href="www.vernier.com/anm-bta">Anemometer</a></li>
+  <li><a href="www.vernier.com/bar-bta">Barometer</a></li>
+  <li><a href="www.vernier.com/con-bta">Conductivity Probe</a></li>
+  <li><a href="www.vernier.com/dcp-bta">Current Probe</a></li>
+  <li><a href="www.vernier.com/dvp-bta">Differential Voltage Probe</a></li>
+  <li><a href="www.vernier.com/dfs-bta">Dual-Range Force Sensor</a></li>
+  <li><a href="www.vernier.com/fp-bta">Force Plate</a></li>
+  <li><a href="www.vernier.com/gps-bta">Gas Pressure Sensor</a></li>
+  <li><a href="www.vernier.com/hd-bta">Hand Dynamometer</a></li>
+  <li><a href="www.vernier.com/anm-bta">Light Sensor</a></li>
+  <li><a href="www.vernier.com/lga-bta">Low-g Accelerometer</a></li>
+  <li><a href="www.vernier.com/mg-bta">Magnetic Field Sensor</a></li>
+  <li><a href="www.vernier.com/o2-bta">O2 Gas Sensor</a></li>
+  <li><a href="www.vernier.com/odo-bta">Optical Dissolved Oxygen</a></li>
+  <li><a href="www.vernier.com/ph-bta">pH Sensor</a></li>
+  <li><a href="www.vernier.com/sal-bta">Salinity Sensor</a></li>
+  <li><a href="www.vernier.com/sms-bta">Soil Moisture Sensor</a></li>
+  <li><a href="www.vernier.com/slm-bta">Sound Level Meter</a></li>
+  <li><a href="www.vernier.com/sls-bta">Sound Level Sensor</a></li>
+  <li><a href="www.vernier.com/tmp-bta">Stainless Steel Temperature Sensor</a></li>
+  <li><a href="www.vernier.com/sts-bta">Surface Temperature Sensor</a></li>
+  <li><a href="www.vernier.com/tilt-bta">TI Light Sensor</a></li>
+  <li><a href="www.vernier.com/uva-bta">UVA Sensor</a></li>
+  <li><a href="www.vernier.com/ph-bta">UVB Sensor</a></li>
+</ul>
 
 <h2>
 <a id="wait-for-the-green-light" class="anchor" href="#wait-for-the-green-light" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wait for the green light</h2>
@@ -67,7 +99,7 @@
 <h2>
 <a id="collect-the-data" class="anchor" href="#collect-the-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Collect the data</h2>
 
-<p>Now the Go! device should be generating a real-time measurement two times every second and you can integrate quantities of temperature or distance into your Scratch projects.</p>
+<p>Now the Go! device should be generating a real-time measurements and you can integrate sensor data into your Scratch projects. Have a sprite change costumes in response to Go!Temp data. Control a sprite's position using Go!Motion data. Or connect an accelerometer to a Go!Link and use that acceleration data to guide a sprite through a Scratch game!</p>
 
 <h2>
 <a id="sample-projects" class="anchor" href="#sample-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sample Projects</h2>
@@ -83,10 +115,10 @@
 <h2>
 <a id="technical-details" class="anchor" href="#sample-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technical Details about the Go! Sensors</h2>
 
-<p>As you begin to use the Go!Temp and Go!Motion sensors in your Scratch projects, there are some technical details about the sensors that are helpful to keep in mind.<br>
+<p>As you begin to use the Go! devices in your Scratch projects, there are some technical details about the sensors that are helpful to keep in mind.<br>
 
 <p><strong>Go!Temp</strong><br>
-<p>The Go!Temp will read temperatures between -20°C and 115°C, to an accuracy of +/- 0.5°C. The sensing element in the Go!Temp is located at the very tip of the probe. The sensing element responds in about 4 s to changes in temperatures; the Go!Temp will not measure rapid temperature changes any faster.<br>
+<p>The Go!Temp will read temperatures between -20°C and 115°C, to an accuracy of +/- 0.5°C. The sensing element in the Go!Temp is located at the very tip of the probe. The sensing element responds in about 4 s to changes in temperatures; the Go!Temp will not measure rapid temperature changes any faster. The Go!Temp extension updates the temperature measurement about twice a second.<br>
 
 <p>For additional information about the Go!Temp, refer to the <a href="http://www.vernier.com/files/manuals/go-temp.pdf">Go!Temp user manual</a>.<br>
 
@@ -99,7 +131,15 @@
 
 <p>The Go!Motion has a sensitivity switch located under the pivoting Go!Motion head. The Ball/Walk setting is best for tracking large objects, large distances, and objects that are poor reflectors. The Track setting is best for tracking smaller, closer objects.<br>
 
+<p>The Go!Motion extension updates the distance measurement about 10 times a second.<br>
+
 <p>For additional information about the Go!Motion, refer to the <a href="http://www.vernier.com/manuals/go-mot/">Go!Motion user manual</a>.<br>
+
+<p><strong>Go!Link</strong><br>
+<p>The Go!Link is an expensive interface to connect standard ("BTA") Vernier sensors to a computer or Chromebook. The Go!Link extension will automatically identify any connected, compatible sensor when the extension is loaded. Sensor measurements are collected in the default units for the connected sensor; for instance, measurements from a Dual-Range Force Sensor are collected in newtons. The extension collects sensor measurements about 20 times a second. <br>
+
+<p>For additional information about the Go!Link, refer to the <a href="https://www.vernier.com/files/manuals/go-link.pdf">Go!Link user manual</a>.<br>
+
 
 <hr>
 
