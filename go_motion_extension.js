@@ -164,7 +164,7 @@
       scale: ['m', 'ft', 'cm'],
       ops: ['>','<','=']
     },
-    url: 'http://www.vernier.com/products/sensors/motion-detectors/go-mot'
+    url: 'https://www.vernier.com/products/sensors/motion-detectors/go-mot'
   };
 
   ScratchExtensions.register('Vernier Go!Motion', descriptor, ext, {type: 'hid', vendor: 0x08f7, product: 4});

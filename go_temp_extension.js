@@ -219,7 +219,7 @@
       scale: ['\u00B0C', '\u00B0F'],
       ops:  ['>','<','=']
     },
-    url: 'http://www.vernier.com/products/sensors/temperature-sensors/go-temp/'
+    url: 'https://www.vernier.com/products/sensors/temperature-sensors/go-temp/'
   };
 
   ScratchExtensions.register('Vernier Go!Temp', descriptor, ext, {type: 'hid', vendor: 0x08f7, product: 2});
